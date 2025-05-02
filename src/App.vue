@@ -3,7 +3,7 @@ import io, { Socket } from 'socket.io-client'
 import { onBeforeMount, ref } from 'vue';
 import { encryptStream, decryptStream } from "./e2ee";
 
-const BASE_URL = 'http://localhost:4000'
+const BASE_URL = 'http://10.223.231.12:4000'
 const roomId = ref<number | undefined>(undefined)
 const isInRoom = ref(false)
 const message = ref('')
